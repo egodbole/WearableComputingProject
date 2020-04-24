@@ -1,0 +1,28 @@
+---
+title: "codebook"
+author: "EGo"
+date: "24/04/2020"
+output: html_document
+---
+
+---
+title: "codebook"
+author: "EGo"
+date: "24/04/2020"
+output: html_document
+---
+
+The finalData dataset tabulates the means of the various activities recorded by the wearable senseors by activity and subject.
+There were 30 subjects in the study numbered from 1 to 30.
+The list of activities is as follows:
+```{r}
+source("run_analysis.R")
+print(levels(activities))
+```
+
+The list of variables in the required finalData dataset is as follows:
+```{r}
+for(i in 1:79) {
+      print(names(finalData)[i])
+}
+```
